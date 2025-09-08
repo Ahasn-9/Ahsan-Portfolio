@@ -1,3 +1,1 @@
-# Sameer F's Portfolio.
-
-https://sameerf.com
+# Ahsan Mughal's Portfolio.
