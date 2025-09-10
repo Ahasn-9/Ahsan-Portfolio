@@ -1,4 +1,3 @@
-import { Logo } from "@/once-ui/components";
 
 const person = {
   firstName: "Ahsan",
@@ -146,10 +145,12 @@ const about = {
         timeframe: "2021 - 2023",
         role: "Web Developer Intern",
         achievements: [
+          // biome-ignore lint/complexity/noUselessFragments: false positive
           <>
             Developed a design system that unified the brand across multiple
             platforms, improving design consistency by 40%.
           </>,
+          // biome-ignore lint/complexity/noUselessFragments: false positive
           <>
             Led a cross-functional team to launch a new product line,
             contributing to a 15% increase in overall company revenue.
@@ -167,27 +168,46 @@ const about = {
         name: "COMSATS University Islamabad",
         description: (
           <>
-            Studied software engineering. Specializing in Human Computer
-            Interaction.
+            Studied software engineering. Specializing in backend development,
+            databases, and system architecture. Graduated with a strong academic
+            record and practical experience through internships and projects.
           </>
         ),
-      },
-      {
-        name: "Google Career Certification",
-        description: <>Completed Google UX Design Professional Certificate.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "My Toolkit",
+    title: "Technical Skills",
     skills: [
+      {
+        title: "Laravel",
+        description: (
+          <>
+            Experienced in building robust web applications using the Laravel
+            PHP framework.
+          </>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "MySQL",
+        description: (
+          <>
+            Skilled in designing and managing relational databases for efficient
+            data storage and retrieval.
+          </>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
       {
         title: "Figma",
         description: (
           <>
-            From designing pixel perfect designs to advanced prototyping, to
-            designing icons and illustrations, Figma is my go-to tool
+            My primary tool for UI/UX design, prototyping, and collaborative
+            design work.
           </>
         ),
         // optional: leave the array empty if you don't want to display images
@@ -197,34 +217,21 @@ const about = {
         title: "Notion",
         description: (
           <>
-            My go-to tool for organizing projects, documenting processes, and
-            collaborating with teams efficiently.
+            My go-to for project management, note-taking, and personal
+            organization.
           </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
+
       {
-        title: "Framer",
-        description: <>Bringing designs to life</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "Webflow",
+        title: "React",
         description: (
           <>
-            Empowers me to turn designs into fully functional, responsive
-            websites without writing code.
+            Proficient in creating dynamic user interfaces and single-page
+            applications using React.js.
           </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "Spline 3D",
-        description: (
-          <>Bringing 3D designs and interactions to web experiences.</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [],

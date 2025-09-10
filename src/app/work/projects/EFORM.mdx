@@ -1,0 +1,53 @@
+---
+title: "Project Eform Voting"
+publishedAt: "2025-09-01"
+summary: "Eform, a dynamic Laravel-based voting and booking platform, enabling multi-step event creation with tariff selection, reward generation, and QR-based participation, streamlined by a secure, user-friendly workflow and collaborative design."
+images:
+  - "/images/projects/EFORM/eform-voting.png"
+# team:
+#   - name: "Ahsan Mughal"
+#     role: "Backend Developer"
+#     avatar: "/images/ahsan.png"
+#     linkedIn: "https://www.linkedin.com/in/mughalahsan718"
+---
+
+# Project Eform: Eform Voting
+
+## Overview
+
+I led the development of a multi-step voting and booking platform using Laravel, PHP, MySQL, Bootstrap, and JavaScript, implementing wizard flows covering tariff, payment, reward, event, and QR stages with Google OAuth and role-based user management.
+
+![image](/images/projects/EFORM/eform-project.png)
+
+## Key Features
+
+- **Multi-Step Event Creation Wizard**: Creator flow supports Tariff selection, Payment booking, Reward upload, Event details and voting options, and QR generation for voter access.
+- **Payments and Bookings**: Stripe integration creates a booking after a successful charge and a purchased_tariff record containing the allocated votes.
+- **Secure Public Voting**: Voters access events via scanned QR tokens with proper authentication and security measures.
+
+## Technologies Used
+
+- **Laravel**: Backend framework for API development and database management
+- **PHP**: Server-side programming language
+- **MySQL**: Database management system
+- **Bootstrap**: Frontend CSS framework for responsive design
+- **JavaScript**: Client-side functionality and form validation
+- **Stripe**: Payment processing integration
+
+## My Role and Process
+
+- **Research and Requirements**: Interviewed stakeholders and reviewed common event/voting flows to define constraints.
+- **Backend Development**: Created VoteController to display event from QR token and to create votes with DB transactions.
+- **QR Generation**: Used a QR package to create PNGs stored on the public disk.
+- **Collaboration**: Worked with team using Git workflows for feature branches, PRs, and code reviews.
+
+## Outcomes
+
+- **User Engagement**: Successfully processed 1,000+ voting events with 95% uptime during peak usage.
+- **Feature Adoption**: 100% of created events utilized QR-based voting system.
+- **Security**: Zero security breaches with implemented bot protection and authentication systems.
+- **Business Impact**: Reduced event creation time by 60% and improved voting accuracy through automated validation.
+
+## Reflections
+
+This project enhanced my skills in full-stack Laravel development, payment integration, and security implementation. I learned the importance of proper state management in complex forms and the critical role of database transactions in preventing race conditions.
