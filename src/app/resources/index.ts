@@ -15,7 +15,7 @@ export {
   newsletter,
   home,
   about,
-  blog,
+  // blog, // Commented out - blog section disabled
   work,
-  gallery,
+  // gallery, // Commented out - gallery section disabled
 } from "@/app/resources/content";

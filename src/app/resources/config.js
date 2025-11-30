@@ -5,8 +5,8 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  // "/blog": true, // Commented out - blog section disabled
+  // "/gallery": true, // Commented out - gallery section disabled
 };
 
 // Enable password protection on selected routes

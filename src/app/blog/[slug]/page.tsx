@@ -11,7 +11,7 @@ import {
   Row,
   Text,
 } from "@/once-ui/components";
-import { about, blog, person, baseURL } from "@/app/resources";
+import { about, /* blog, */ person, baseURL } from "@/app/resources";
 import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 import { Metadata } from "next";
@@ -46,7 +46,7 @@ export async function generateMetadata({
     image: post.metadata.image
       ? `${baseURL}${post.metadata.image}`
       : `${baseURL}/og?title=${post.metadata.title}`,
-    path: `${blog.path}/${post.slug}`,
+    path: `/blog/${post.slug}`, // blog.path commented out - blog section disabled
   });
 }
 
@@ -75,7 +75,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
           <Schema
             as="blogPosting"
             baseURL={baseURL}
-            path={`${blog.path}/${post.slug}`}
+            path={`/blog/${post.slug}`} // blog.path commented out - blog section disabled
             title={post.metadata.title}
             description={post.metadata.summary}
             datePublished={post.metadata.publishedAt}
